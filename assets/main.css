@@ -1,0 +1,53 @@
+
+.fade-enter-to, .fade-leave {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: scale(0);
+
+}
+
+.modal-container--my {
+  border-radius: 2px;
+  box-shadow: 0 20px 60px -2px rgb(27 33 58 / 40%);
+  border: 3px solid white;
+
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  transition: opacity 0.3s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-outline-success {
+  color: #dc1962;
+  border-color: #dc1962;
+}
+
+.btn-outline-success:hover {
+  background-color: #dc1962;
+  border-color: #dc1962;
+  box-shadow: 0 0 5px #dc1962
+}
+
+.btn-outline-success:focus {
+  box-shadow: 0 0 3px #dc1962
+}
